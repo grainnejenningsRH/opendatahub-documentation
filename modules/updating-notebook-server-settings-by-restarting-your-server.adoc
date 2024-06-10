@@ -9,7 +9,7 @@ You can update the settings on your notebook server by stopping and relaunching 
 
 .Prerequisites
 * A running notebook server.
-* Log in to JupyterLab.
+* Log in to your workbench.
 
 .Procedure
 . Click *File* -> *Hub Control Panel*.

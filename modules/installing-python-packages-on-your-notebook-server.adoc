@@ -22,7 +22,7 @@ NOTE: You can also install packages directly, but using a `requirements.txt` fil
 endif::[]
 
 .Prerequisites
-* Log in to JupyterLab and open a notebook.
+* Log in to your workbench and open it.
 
 .Procedure
 . Create a new text file using one of the following methods:

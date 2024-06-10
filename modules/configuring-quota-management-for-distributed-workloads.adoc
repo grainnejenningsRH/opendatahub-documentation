@@ -122,7 +122,7 @@ spec:
   clusterQueue: cluster-queue
 ----
 The `kueue.x-k8s.io/default-queue: 'true'` annotation defines this queue as the default queue.
-Distributed workloads are submitted to this queue if no `local_queue` value is specified in the `ClusterConfiguration` section of the data science pipeline or Jupyter notebook or Microsoft Visual Studio Code file.
+Distributed workloads are submitted to this queue if no `local_queue` value is specified in the `ClusterConfiguration` section of the data science pipeline, Jupyter or code-server notebook, or Microsoft Visual Studio Code file.
 .. Update the `namespace` value to specify the same namespace as in the `ClusterConfiguration` section that creates the Ray cluster.
 .. Optional: Update the `name` value accordingly.
 .. Apply the configuration to create the local-queue object:
