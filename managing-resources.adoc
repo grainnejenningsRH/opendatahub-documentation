@@ -30,7 +30,7 @@ include::assemblies/managing-applications-that-show-in-the-dashboard.adoc[levelo
 
 include::assemblies/managing-cluster-resources.adoc[leveloffset=+1]
 
-include::assemblies/customizing-component-deployment-resources.adoc[leveloffset=+1]
+include::assemblies/customizing-component-resources.adoc[leveloffset=+1]
 
 include::assemblies/managing-notebook-servers.adoc[leveloffset=+1]
 

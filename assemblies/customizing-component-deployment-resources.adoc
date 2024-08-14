@@ -14,7 +14,7 @@ include::../_artifacts/document-attributes-global.adoc[]
 endif::preview[]
 
 include::modules/overview-of-component-resource-customization.adoc[leveloffset=+1]
-include::modules/customizing-component-deployment-resources.adoc[leveloffset=+1]
+include::modules/customizing-component-resources.adoc[leveloffset=+1]
 include::modules/disabling-component-resource-customization.adoc[leveloffset=+1]
 include::modules/reenabling-component-resource-customization.adoc[leveloffset=+1]
 
