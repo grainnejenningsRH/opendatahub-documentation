@@ -2,7 +2,7 @@
 
 ifdef::context[:parent-context: {context}]
 
-:context: custom-resource
+:context: resource-mgmt
 
 [id="customizing-component-deployment-resources_{context}"]
 = Customizing component deployment resources
