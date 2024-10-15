@@ -13,16 +13,7 @@ include::_artifacts/document-attributes-global.adoc[]
 :context: model-registry
 
 include::modules/overview-of-model-registries.adoc[leveloffset=+1]
-
-== Configuring the model registry component
-
-As an OpenShift cluster administrator, you can configure the model registry feature for {productname-short} administrators and data scientists to use.
-
 include::modules/configuring-the-model-registry-component.adoc[leveloffset=+1]
-
-== Managing model registries
-
-As an {productname-short} administrator, you can create, delete, and manage permissions for model registries in {productname-short}.
 
 include::modules/creating-a-model-registry.adoc[leveloffset=+1]
 include::modules/managing-model-registry-permissions.adoc[leveloffset=+1]
