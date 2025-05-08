@@ -1,0 +1,25 @@
+:_module-type: ASSEMBLY
+
+ifdef::context[:parent-context: {context}]
+
+[id="editing-the-deployment-properties-of-models-deployed-from-a-model-registry_{context}"]
+= Editing the deployment properties of models deployed from a model registry
+:upstream:
+//:preview:
+
+ifdef::preview[]
+include::../_artifacts/document-attributes-global.adoc[]
+endif::preview[]
+
+You can edit model version deployment properties from a model registry for models that were deployed from the registry. For example, you can change the deployment name, model framework, and source model location details.
+
+include::modules/editing-the-deployment-properties-of-a-model-deployed-by-using-the-multi-model-serving-platform.adoc[leveloffset=+2]
+include::modules/editing-the-deployment-properties-of-a-model-deployed-by-using-the-single-model-serving-platform.adoc[leveloffset=+2]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
+
+
+editing-the-deployment-properties-of-models-deployed-from-a-model-registry
+editing-the-deployment-properties-of-models-deployed-from-a-model-registry.adoc

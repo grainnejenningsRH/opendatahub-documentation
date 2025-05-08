@@ -1,0 +1,23 @@
+:_module-type: ASSEMBLY
+
+ifdef::context[:parent-context: {context}]
+
+[id="configuring-the-model-registry-component_{context}"]
+= Configuring the model registry component
+:upstream:
+//:preview:
+
+ifdef::preview[]
+include::../_artifacts/document-attributes-global.adoc[]
+endif::preview[]
+
+As an {openshift-platform} cluster administrator, you can configure the model registry feature for {productname-short} administrators and data scientists to use.
+
+include::modules/configuring-the-model-registry-component.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
+
+
+

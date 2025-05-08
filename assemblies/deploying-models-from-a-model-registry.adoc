@@ -1,0 +1,21 @@
+:_module-type: ASSEMBLY
+
+ifdef::context[:parent-context: {context}]
+
+[id="deploying-models-from-a-model-registry_{context}"]
+= Deploying models from a model registry
+:upstream:
+//:preview:
+
+ifdef::preview[]
+include::../_artifacts/document-attributes-global.adoc[]
+endif::preview[]
+
+As a data scientist in {productname-short}, you can deploy models, edit deployment properties, and delete deployed model versions from a model registry.
+
+include::modules/deploying-a-model-version-from-a-model-registry.adoc[leveloffset=+1]
+include::assemblies/editing-the-deployment-properties-of-models-deployed-from-a-model-registry.adoc[leveloffset=+1]
+include::modules/deleting-a-deployed-model-version-from-a-model-registry.adoc[leveloffset=+1]
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]

@@ -1,0 +1,26 @@
+:_module-type: ASSEMBLY
+
+ifdef::context[:parent-context: {context}]
+
+[id="registering-a-model-in-a-model-registry_{context}"]
+= Registering a model in a model registry
+:upstream:
+//:preview:
+
+ifdef::preview[]
+include::../_artifacts/document-attributes-global.adoc[]
+endif::preview[]
+
+As a data scientist, you can register a model from the {productname-short} dashboard.
+
+include::modules/registering-a-model.adoc[leveloffset=+1]
+include::modules/registering-a-model-version.adoc[leveloffset=+1]
+include::modules/viewing-registered-models.adoc[leveloffset=+1]
+include::modules/viewing-registered-model-versions.adoc[leveloffset=+1]
+include::modules/editing-model-metadata-in-a-model-registry.adoc[leveloffset=+1]
+include::modules/editing-model-version-metadata-in-a-model-registry.adoc[leveloffset=+1]
+
+
+ifdef::parent-context[:context: {parent-context}]
+ifndef::parent-context[:!context:]
+
