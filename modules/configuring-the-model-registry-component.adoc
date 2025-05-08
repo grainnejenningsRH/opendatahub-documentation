@@ -5,7 +5,9 @@
 
 [role='_abstract']
 ifdef::upstream,self-managed[]
-To configure the model registry feature for your data scientists to use in {productname-short}, you must install the following Operators in {openshift-platform}, and then enable the `modelregistry` component in {productname-short}.
+As an {openshift-platform} cluster administrator, you can configure the model registry feature for {productname-short} administrators and data scientists to use.
+
+To configure the model registry feature, you must install the following Operators in {openshift-platform}, and then enable the `modelregistry` component in {productname-short}.
 endif::[]
 
 ifdef::cloud-service[]
