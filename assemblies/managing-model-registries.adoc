@@ -13,6 +13,7 @@ endif::preview[]
 
 As an {productname-short} administrator, you can create, delete, and manage permissions for model registries in {productname-short}.
 
+include::modules/overview-of-model-registries.adoc[leveloffset=+1]
 include::modules/creating-a-model-registry.adoc[leveloffset=+1]
 include::modules/editing-a-model-registry.adoc[leveloffset=+1]
 include::modules/managing-model-registry-permissions.adoc[leveloffset=+1]

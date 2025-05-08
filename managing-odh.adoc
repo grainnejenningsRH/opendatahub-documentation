@@ -60,6 +60,8 @@ include::modules/enabling-amd-gpus.adoc[leveloffset=+3]
 
 include::assemblies/managing-distributed-workloads.adoc[leveloffset=+1]
 
+include::assemblies/managing-model-registries.adoc[leveloffset=+1]
+
 include::modules/backing-up-storage-data.adoc[leveloffset=+1]
 
 include::assemblies/viewing-logs-and-audit-records.adoc[leveloffset=+1]

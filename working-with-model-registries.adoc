@@ -13,7 +13,4 @@ include::_artifacts/document-attributes-global.adoc[]
 :context: model-registry
 
 include::modules/overview-of-model-registries.adoc[leveloffset=+1]
-include::modules/configuring-the-model-registry-component.adoc[leveloffset=+1]
-include::assemblies/managing-model-registries.adoc[leveloffset=+1]
 include::assemblies/working-with-model-registries.adoc[leveloffset=+1]
-

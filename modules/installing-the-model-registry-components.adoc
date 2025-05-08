@@ -1,17 +1,17 @@
 :_module-type: PROCEDURE
 
-[id='configuring-the-model-registry-component_{context}']
-= Configuring the model registry component
+[id='installing-the-model-registry-components_{context}']
+= Installing the model registry components
 
 [role='_abstract']
 ifdef::upstream,self-managed[]
-As an {openshift-platform} cluster administrator, you can configure the model registry feature for {productname-short} administrators and data scientists to use.
+As an {openshift-platform} cluster administrator, you can enable the model registry feature for {productname-short} administrators and data scientists to use.
 
-To configure the model registry feature, you must install the following Operators in {openshift-platform}, and then enable the `modelregistry` component in {productname-short}.
+To enable the model registry feature, you must install the following Operators in {openshift-platform}, and then enable the `modelregistry` component in {productname-short}.
 endif::[]
 
 ifdef::cloud-service[]
-To configure the model registry feature for your data scientists to use in {productname-short}, you must install the following Operators in {openshift-platform}, install {productname-long} as an add-on to your {openshift-platform} cluster, and then enable the `modelregistry` component in {productname-short}.
+To enable the model registry feature for your data scientists to use in {productname-short}, you must install the following Operators in {openshift-platform}, install {productname-long} as an add-on to your {openshift-platform} cluster, and then enable the `modelregistry` component in {productname-short}.
 endif::[]
 
 * {org-name} Authorino Operator (`stable` update channel, version 1.2.1 or later)
