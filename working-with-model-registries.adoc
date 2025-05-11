@@ -27,7 +27,7 @@ As an {productname-short} administrator, you can create, delete, and manage perm
 
 include::modules/creating-a-model-registry.adoc[leveloffset=+1]
 include::modules/editing-a-model-registry.adoc[leveloffset=+1]
-include::modules/managing-model-registry-permissions.adoc[leveloffset=+1]
+include::modules/managing-role-based-access-controls.adoc[leveloffset=+1]
 include::modules/deleting-a-model-registry.adoc[leveloffset=+1]
 
 

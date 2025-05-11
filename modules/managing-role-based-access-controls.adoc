@@ -1,7 +1,7 @@
 :_module-type: PROCEDURE
 
-[id="managing-model-registry-permissions-from-openshift_{context}"]
-= Managing model registry permissions from {openshift-platform}
+[id="managing-role-based-access-controls_{context}"]
+= Managing role-based access controls from {productname-short}
 
 [role='_abstract']
 You can manage access to a model registry for individual users and user groups in your organization, and for service accounts in a project.

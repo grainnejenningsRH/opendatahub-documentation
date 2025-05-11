@@ -1,0 +1,41 @@
+:_module-type: PROCEDURE
+
+[id="managing-role-based-access-controls-from-openshift_{context}"]
+= Managing role-based access controls from {openshift-platform}
+
+[role='_abstract']
+As a cluster admin, you can manage access to a model registry from {openshift-platform}. You can grant access to individual users and user groups in your organization, and for service accounts in a project.
+
+{productname-short} creates the `<model-registry-name>-users` group automatically for use with model registries. You can add users to this group in {openshift-platform}.
+
+ifdef::upstream[]
+endif::[]
+
+ifndef::upstream[]
+endif::[]
+
+.Prerequisites
+* You have logged in to {openshift-platform} with the `cluster-admin` role.
+* An available model registry exists in your {productname-short} deployment.
+ifdef::upstream[]
+* The users and groups that you want to provide access to already exist in {openshift-platform}. For more information, see
+link:{odhdocshome}/managing-odh/#managing-users-and-groups[Managing users and groups].
+endif::[]
+
+ifndef::upstream[]
+* The users and groups that you want to provide access to already exist in {openshift-platform}. For more information, see link:{rhoaidocshome}{default-format-url}/managing_openshift_ai/managing-users-and-groups[Managing users and groups].
+endif::[]
+
+.Procedure
+. In the {openshift-platform} console, click
+.
+
+.Verification
+* Users, groups, and accounts that were granted access to a model registry can register, view, edit, version, deploy, delete, archive, and restore models in that registry.
+* The *Users* and *Groups* sections on the *Permissions* tab show the respective users and groups that you granted access to the model registry.
+* The *Projects* sections on the *Projects* tab show the projects that you granted access to the model registry.
+
+
+
+
+
