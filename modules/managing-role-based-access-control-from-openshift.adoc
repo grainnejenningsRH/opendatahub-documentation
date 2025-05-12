@@ -1,18 +1,48 @@
 :_module-type: PROCEDURE
 
-[id="managing-role-based-access-controls-from-openshift_{context}"]
-= Managing role-based access controls from {openshift-platform}
+[id="managing-role-based-access-control-from-openshift_{context}"]
+= Managing role-based access control from {openshift-platform}
 
 [role='_abstract']
 As a cluster admin, you can manage access to a model registry from {openshift-platform}. You can grant access to individual users and user groups in your organization, and for service accounts in a project.
 
-{productname-short} creates the `<model-registry-name>-users` group automatically for use with model registries. You can add users to this group in {openshift-platform}.
-
 ifdef::upstream[]
+The model registry operator uses OpenShift Role-Based Access Control (RBAC), and creates various RBAC resources in the `odh-model-registries` namespace.
 endif::[]
 
 ifndef::upstream[]
+The model registry operator uses OpenShift Role-Based Access Control (RBAC), and creates various RBAC resources in the `rhoai-model-registries` namespace.
 endif::[]
+
+For each model registry instance, the operator creates a `registry-users-{{Name}}` role which has the following access rules:
++
+[source]
+----
+ rules:
+- apiGroups:
+  - ""
+  resourceNames:
+  - {{Name}}
+  resources:
+  - services
+  verbs:
+  - get
+- apiGroups:
+  - ""
+  resourceNames:
+  - {{Name}}
+  resources:
+  - endpoints
+  verbs:
+  - get
+----
+
+You can grant an individual user or service account access to the model registry service by creating a role binding to the `registry-users-{{Name}}` role.
+
+The model registry operator also creates an {openshift-platform} group called `{{Name}}-users`, which has a role binding to the `registry-users-{{Name}}` role. You can add users to this group to grant them access to the model registry instance without needing to create a RoleBinding for each User.
+
+To enable access for all cluster users, add `system:authenticated` to the group list.
+
 
 .Prerequisites
 * You have logged in to {openshift-platform} with the `cluster-admin` role.
