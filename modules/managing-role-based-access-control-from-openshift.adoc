@@ -7,14 +7,14 @@
 As a cluster admin, you can manage access to a model registry from {openshift-platform}. You can grant access to individual users and user groups in your organization, and for service accounts in a project.
 
 ifdef::upstream[]
-The model registry operator uses OpenShift Role-Based Access Control (RBAC), and creates various RBAC resources in the `odh-model-registries` namespace.
+The model registry operator uses {openshift-platform} Role-Based Access Control (RBAC), and creates various RBAC resources in the `odh-model-registries` namespace.
 endif::[]
 
 ifndef::upstream[]
-The model registry operator uses OpenShift Role-Based Access Control (RBAC), and creates various RBAC resources in the `rhoai-model-registries` namespace.
+The model registry operator uses {openshift-platform} Role-Based Access Control (RBAC), and creates various RBAC resources in the `rhoai-model-registries` namespace.
 endif::[]
 
-For each model registry instance, the operator creates a `registry-users-{{Name}}` role which has the following access rules:
+For each model registry instance, the operator creates a `registry-users-<model registry instance name>` role which has the following access rules:
 +
 [source]
 ----
@@ -37,9 +37,9 @@ For each model registry instance, the operator creates a `registry-users-{{Name}
   - get
 ----
 
-You can grant an individual user or service account access to the model registry service by creating a role binding to the `registry-users-{{Name}}` role.
+You can grant an individual user or service account access to the model registry service by creating a role binding to the `registry-users-<model registry instance name>` role.
 
-The model registry operator also creates an {openshift-platform} group called `{{Name}}-users`, which has a role binding to the `registry-users-{{Name}}` role. You can add users to this group to grant them access to the model registry instance without needing to create a RoleBinding for each User.
+The model registry operator also creates an {openshift-platform} group called `<model registry instance name>-users`, which has a role binding to the `registry-users-<model registry instance name>` role. You can add users to this group to grant them access to the model registry instance without needing to create a role binding for each user.
 
 To enable access for all cluster users, add `system:authenticated` to the group list.
 
@@ -62,8 +62,6 @@ endif::[]
 
 .Verification
 * Users, groups, and accounts that were granted access to a model registry can register, view, edit, version, deploy, delete, archive, and restore models in that registry.
-* The *Users* and *Groups* sections on the *Permissions* tab show the respective users and groups that you granted access to the model registry.
-* The *Projects* sections on the *Projects* tab show the projects that you granted access to the model registry.
 
 
 
