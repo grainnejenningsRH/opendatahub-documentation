@@ -2,15 +2,15 @@
 
 ifdef::context[:parent-context: {context}]
 
-:context: enable-mr
+:context: model-registry
 
-[id="enabling-the-model-registry-component_{context}"]
-= Enabling the model registry component
+[id="enabling-the-model-registry-components_{context}"]
+= Enabling the model registry components
 
 [role='_abstract']
 As an OpenShift cluster administrator, you can enable the model registry component and model catalog feature for {productname-short} administrators and data scientists to use.
 
-include::./enabling-the-model-registry-component.adoc[leveloffset=+1]
+include::modules/enabling-the-model-registry-component.adoc[leveloffset=+1]
 include::modules/enabling-the-model-catalog.adoc[leveloffset=+1]
 
 ifdef::parent-context[:context: {parent-context}]

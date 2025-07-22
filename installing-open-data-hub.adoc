@@ -22,7 +22,7 @@ include::assemblies/installing-odh-v1.adoc[leveloffset=+1]
 
 include::modules/installing-the-distributed-workloads-components.adoc[leveloffset=+1]
 
-include::modules/enabling-the-model-registry-component.adoc[leveloffset=+1]
+include::assemblies/enabling-the-model-registry-components.adoc[leveloffset=+1]
 
 include::modules/accessing-the-odh-dashboard.adoc[leveloffset=+1]
 
